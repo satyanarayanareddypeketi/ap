@@ -35,7 +35,7 @@
   </target>
 
   <target name="build" depends="Jar">
-    <mkdir dir="${test.ant.dir}"/>
+    <mkdir dir="./test"/>
     <javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false">
         <classpath refid="classpath.test"/>
     </javac>
